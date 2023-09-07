@@ -1,0 +1,64 @@
+#include<iostream>
+using namespace std;
+int count(int a[],int n,int key){
+    int i,count=0;
+    for(int i=0;i<=n;i++){
+        if(a[i]==key){
+            count++;
+        }
+    }
+    return count;
+}
+int count(char b[],int m,char cha){
+    int i,count=0;
+    for(int i=0;i<=m;i++){
+        if(b[i]==cha){
+            count++;
+        }
+    }
+    return count;
+}
+int main(){
+    int ch;
+    cout<<"ENTER YOUR CHOICE: ";
+    cin>>ch;
+    switch(ch){
+case 1:
+{
+int num;
+cout<<"\nENTER THE SIZE OF ARRAY: ";
+cin>>num;
+int intarr[num];
+cout<<"\n ENTER THE NUMBERS: ";
+for(int i=0;i<=num;i++){
+cin>>intarr[i];
+}
+int key1;
+cout<<"\nENTER THE NUMBER TO BE SEARCHED: ";
+cin>>key1;
+cout<<"COUNT: "<<count
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
