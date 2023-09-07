@@ -19,7 +19,9 @@ int count(char b[],int m,char cha){
     return count;
 }
 int main(){
+    while(true){
     int ch;
+    cout<<"MENU\n 1.NUMBERS\n2.CHARACTERS\n";
     cout<<"ENTER YOUR CHOICE: ";
     cin>>ch;
     switch(ch){
@@ -36,29 +38,25 @@ cin>>intarr[i];
 int key1;
 cout<<"\nENTER THE NUMBER TO BE SEARCHED: ";
 cin>>key1;
-cout<<"COUNT: "<<count
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+cout<<"COUNT: "<<count(intarr,num,key1);
+break;
+}
+case 2:
+{
+int numm;
+cout<<"\nENTER THE SIZE OF ARRAY: ";
+char charaari[numm];
+cout<<"\nENTER THE CHARACTERS ";
+for(int i=0;i<=numm;i++){
+cin>>charaari[i];
+}
+char cha1;
+cout<<"\nENTER THE CHARACTER TO BE SERCHED: ";
+cin>>cha1;
+cout<<"\nCOUNT: "<<count(charaari,numm,cha1);
+break;
+}
+}
+}
+return 0;
+}
